@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Tusk-8</title>
+</head>
+<body>
+ 
+    
+
+    <script>
+           // Task-8
+
+    // Create a function called heighestScore that will 
+    // recive a 1 dimension array called scores
+    // return the highest score
+        
+
+       var score=[28,75,15,79];
+        
+    function topScore(arrayData){
+        let max = arrayData[0];
+        for (let i = 0; i < arrayData.length; i++) {
+            if (max < arrayData[i]) {
+                max = arrayData[i];
+            }
+            
+        }
+        
+        return max;
+       
+    }
+    
+    let b = topScore(score);
+    document.write(b);
+
+   // Task-9
+
+function highestScorer(runs){
+   var max=runs[0][1];
+   for(var i=0;i<runs.length; i++){
+
+   if(max<runs.length[i][1]{
+    max=runs.length[i];
+   }
+
+   }
+   return max
+}
+
+
+var info=[
+    ["Amir", 30],
+    ["Sakib",75],
+    ["Tanvir",88],
+    ["Tamim",28]
+]
+
+  var bc = highestScorer(info);
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

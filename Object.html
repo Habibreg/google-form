@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <script> // Object
+
+    // // Student Details
+    //     var name= "Habib";
+    //     var age= 32;
+    //     var prof = "privet job ";
+    //     var country="Bangladesh";
+
+    // var emplyee={
+    //     name : "Habib",
+    //     age: 32,
+    //     department:"Distribution",
+    //     id : 11900444,
+    //     doj: "01-10-2019",
+    //     workLocation : "BIHQ-2",
+    //     homeDistric: "Ctg",
+    //     prof :"privet job ",
+    //    country: "Bangladesh",
+
+    // }
+
+    // document.write(emplyee.name + "<br>");
+    // document.write(emplyee.id);
+
+// Constractor
+
+function Employee(name,age,id,doj, department){
+    this.name= name ;
+    this.age=age;
+    this.doj=doj,
+    this.id=id;
+    this.department=department;
+
+    this.disply = function(){
+                document.write( this.name);
+                document.write(this.age);
+                document.write(this.doj);
+                document.write(this.id);
+                document.write(this.department);
+            
+
+    }
+
+}
+
+var emplyee1= new Employee("Ramzan Hossain" , 30 , 21200049 ,"07.01.2021","SO section");
+var emplyee2= new Employee("Hasibul Islam", 32,227000121,"14.02.2022","Sales Admin");
+var emplyee3= new Employee("Rabiul", 38,2111007,"0711.06.2021","Picnic");
+   
+emplyee1.disply();
+emplyee2.disply();
+emplyee3.disply();
+
+
+   </script>
+</body>
+</html>
